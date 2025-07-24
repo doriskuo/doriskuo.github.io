@@ -1,0 +1,87 @@
+* {
+  color: #c4b1a0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}
+label #switch {
+  display: none;
+}
+
+.bgbox_enl, .bgbox_chi {
+  padding: 20px 200px;
+}
+.bgbox_enl h1, .bgbox_chi h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+  border-bottom: 2px solid #c4b1a0;
+  margin: 0;
+}
+.bgbox_enl .personalmessage, .bgbox_chi .personalmessage {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bgbox_enl .personalmessage p, .bgbox_chi .personalmessage p {
+  margin-bottom: 0px;
+}
+.bgbox_enl .personalmessage p.phonenum, .bgbox_chi .personalmessage p.phonenum {
+  flex: 0 0 50%;
+}
+.bgbox_enl .personalmessage p.email, .bgbox_chi .personalmessage p.email {
+  text-align: right;
+  flex: 0 0 50%;
+}
+.bgbox_enl .personalmessage p.language, .bgbox_chi .personalmessage p.language {
+  flex: 0 0 100%;
+}
+.bgbox_enl .exparea, .bgbox_chi .exparea {
+  margin: 50px 0px;
+  padding: 0px 50px;
+}
+.bgbox_enl .exparea h3, .bgbox_chi .exparea h3 {
+  font-size: 25px;
+}
+.bgbox_enl .exparea .company, .bgbox_chi .exparea .company {
+  font-size: 18px;
+  font-weight: 500;
+}
+.bgbox_enl .exparea table, .bgbox_chi .exparea table {
+  padding: 10px;
+}
+.bgbox_enl .exparea table th, .bgbox_enl .exparea table td, .bgbox_chi .exparea table th, .bgbox_chi .exparea table td {
+  padding: 3px 10px;
+  padding-right: 30px;
+  text-align: left;
+}
+.bgbox_enl .exparea table th, .bgbox_chi .exparea table th {
+  font-size: 20px;
+}
+.bgbox_enl .exparea h5, .bgbox_chi .exparea h5 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+.bgbox_enl .exparea .education, .bgbox_chi .exparea .education {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  display: flex;
+}
+.bgbox_enl .exparea .education div, .bgbox_chi .exparea .education div {
+  flex: 0 0 50%;
+}
+.bgbox_enl .exparea .education div.school, .bgbox_chi .exparea .education div.school {
+  text-align: right;
+}
+
+.showoff {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

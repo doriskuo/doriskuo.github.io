@@ -1,0 +1,79 @@
+$color_milktea:#c4b1a0
+
+*
+    color: $color_milktea
+    box-sizing: border-box
+
+html,body
+    margin: 0
+    padding: 0
+
+label
+    cursor: pointer
+    #switch
+        display: none
+
+.bgbox_enl,.bgbox_chi
+    padding:20px 200px 
+    h1
+        text-align: center
+        padding: 20px
+        font-size: 35px
+        border-bottom: 2px solid $color_milktea
+        margin: 0
+    .personalmessage
+        // border: 1px solid #000
+        display: flex
+        flex-wrap: wrap
+        p
+            // border: 1px solid #000
+            margin-bottom: 0px
+            
+        p.phonenum
+            flex: 0 0 50%
+        p.email
+            text-align: right
+            flex: 0 0 50%
+        p.language
+            flex: 0 0 100%
+
+
+    .exparea
+        margin: 50px 0px
+        padding: 0px 50px
+        h3
+            font-size: 25px
+        .company
+            font-size: 18px
+            font-weight: 500
+
+        table
+            // border: 2px solid $color_milktea
+            padding: 10px
+
+            th,td
+                padding: 3px 10px
+                padding-right: 30px
+                text-align: left
+            th
+                font-size: 20px
+
+
+
+        
+        h5
+            font-size: 18px
+            font-weight: 500
+            margin: 0
+        .education
+            margin: 0
+            margin-bottom: 20px
+            padding: 0
+            display: flex
+            div
+                flex: 0 0 50%
+            div.school
+                text-align: right
+
+.showoff
+    display: none

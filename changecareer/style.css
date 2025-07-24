@@ -1,0 +1,41 @@
+* {
+  color: #c4b1a0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}
+label #switch {
+  display: none;
+}
+
+.contentbox_enl, .contentbox_chi {
+  padding: 50px 200px;
+}
+.contentbox_enl h1, .contentbox_chi h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 35px;
+  border-bottom: 2px solid #c4b1a0;
+  margin: 0;
+}
+.contentbox_enl .storybox, .contentbox_chi .storybox {
+  padding: 30px 80px;
+}
+.contentbox_enl .storybox h3, .contentbox_chi .storybox h3 {
+  font-size: 25px;
+}
+.contentbox_enl .storybox p, .contentbox_chi .storybox p {
+  font-size: 18px;
+  text-indent: 2em;
+}
+
+.showoff {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

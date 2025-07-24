@@ -1,0 +1,600 @@
+$color_milktea:#c4b1a0
+$color_white: #fff
+$color_bg_green:rgba(233, 235, 227, 0.8)
+$color_audio:rgba(243, 242, 242,0.8)
+$color_transparent:rgba(0, 0 ,0 ,0 )
+$color_text_bg_gray:rgb(244, 244, 239, 0.6)
+$color_text_bg_hover:rgb(244, 244, 239, 0.9)
+$color_skillicon_bg:rgba(255,255 ,255 , 0.5)
+$color_skillicon_hover:rgba(255,255 ,255 , 1)
+$color_moveintext_green:rgb(197, 226, 140)
+
+
+*
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+
+html,body
+    margin: 0px
+    padding: 0px  
+
+nav
+    z-index: 6
+    background-color: $color_bg_green
+    height: 80px
+    position: fixed
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .logo
+        flex: 0 0 20%
+        text-align: center
+        align-items: center
+        img
+            margin-top: 10px
+            width: 150px
+            height: 150px
+    ul
+        flex: 0 0 45%
+        display: flex
+        justify-content: center
+        align-items: center
+        li
+            list-style: none
+            flex: 0 0 15%
+            text-align: center
+            min-width: 150px
+            font-weight: 900
+            transition-duration: 0.5s
+            a
+                text-decoration: none
+                color: $color_milktea
+                transition-duration: 0.5s
+                &:hover
+                    color: white
+                    background-color: $color_milktea
+                    padding: 3px 10px
+                    transition-duration: 0.5s
+               
+header
+    .bgimg
+        z-index: -4
+        width: 100%
+        height: 100vh
+        background-image: url("./pictures/bgimg1.jpg")
+        transition-duration: 0.5s
+        background-size: cover
+        background-attachment: fixed
+    a.arrow
+        text-decoration: none
+        color: $color_transparent
+        -webkit-text-stroke: 2px $color_white
+        position: absolute
+        bottom: 10px
+        left: 50%
+        right: 50%
+        font-size: 50px
+        transform: translateX(-50%)
+        transform: scale(2,1)
+        animation: bounce 3s infinite
+        animation-delay: -3s
+        transition-duration: 0.5s
+    .audioplayer
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        bottom: 10px
+        right: 100px
+        width: 50px
+        height: 50px
+        cursor: pointer
+        transition-duration: 0.5s
+        i.fa-solid.fa-volume-xmark,i.fa-solid.fa-volume-high
+            text-align: center
+            font-size: 30px
+            color: $color_audio
+            
+    .moveinarea
+        position: absolute
+        animation: movein 3s forwards
+        h1
+            color: $color_white
+            font-size: 50px
+            transition-duration: 0.5s
+            &:after
+                content: "Brave Attempt"
+        p
+            color: $color_white
+            font-size: 30px
+            transition-duration: 0.5s
+            &:after
+                content: "Embrace Change"     
+        
+section#about
+    padding-top: 80px
+    .container
+    .container.top
+        text-align: center
+        margin: 2px
+        margin-bottom: 25px
+        padding: 0px 150px
+        h1
+            color: $color_milktea
+            font-size: 50px
+            text-align: center
+            transition-duration: 0.5s
+        p
+            color: $color_milktea
+            text-align: center
+            font-size: 22px
+            transition-duration: 0.5s
+
+    .container.bottom
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        transition-duration: 0.5s
+        .pic
+            margin: 10px
+            border-radius: 10px
+            flex: 0 1 35%
+            height: 250px
+            display: flex
+            justify-content: center
+            align-items: center
+            transition-duration: 0.5s
+            a
+                border-radius: 5px
+                flex: 0 0 80%
+                display: flex
+                justify-content: center
+                align-items: center
+                text-decoration: none
+            .textbox 
+                padding: 10px 20px
+                border-radius: 5px
+                background: $color_text_bg_gray
+                transition-duration: 0.5s
+                h3
+                    color: $color_milktea
+                    opacity: 0.6
+                    text-align: center
+                    transition-duration: 0.5s
+                    
+        
+        .pic1
+            background-image: url("./pictures/bgimg2.jpg")
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: 100%
+            transition-duration: 0.5s
+            &:hover
+                background-size: 110%
+                transition-duration: 0.5s
+                .textbox
+                    background: $color_text_bg_hover
+                h3
+                    opacity: 1
+        .pic2
+            background-image: url("./pictures/bgimg3.jpg")
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: 100%
+            transition-duration: 0.5s
+            &:hover
+                background-size: 110%
+                transition-duration: 0.5s
+                .textbox
+                    background: $color_text_bg_hover
+                h3
+                    opacity: 1
+        .pic3
+            background-image: url("./pictures/bgimg4.jpg")
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: 100%
+            transition-duration: 0.5s
+            &:hover
+                background-size: 110%
+                transition-duration: 0.5s
+                .textbox
+                    background: $color_text_bg_hover
+                h3
+                    opacity: 1
+        .pic4
+            background-image: url("./pictures/bgimg6.jpg")
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: 100%
+            transition-duration: 0.5s
+            &:hover
+                background-size: 110%
+                transition-duration: 0.5s
+                .textbox
+                    background: $color_text_bg_hover
+                h3
+                    opacity: 1
+
+section#skills
+    padding-top: 80px
+    .skillbgimg
+        background-image: url("./pictures/bgimg7.jpg")
+        background-size: cover
+        background-position: 0 80%
+        opacity: 0.8
+        width: 100%
+        height: 400px
+        swiper-container
+            margin: 0
+            padding: 0
+            width: 100%
+            height: 100%
+            --swiper-pagination-bullet-inactive-color: #fff
+            swiper-slide
+                margin: 0
+                padding: 0
+                width: 100%
+                height: 100%
+                .imgcontainer
+                    width: 80%
+                    height: 80%
+                    position: relative
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+                    h3
+                        text-align: center
+                        color: $color_milktea
+                        font-size: 50px
+                        margin: 40px 0px 30px 0px
+                        transition-duration: 0.5s
+                        transition-duration: 0.5s
+
+                    .iconbox
+                        position: relative
+                        left: 50%
+                        transform: translateX(-50%)
+                        display: flex
+                        justify-content: center
+                        width: 100%
+                        height: 120px
+                        transition-duration: 0.5s
+
+                        div
+                            
+                            min-width: 130px
+                            margin: 3px 10px
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            background-color: $color_skillicon_bg
+                            border-radius: 10px
+                            transition-duration: 0.5s
+                            img
+                                width: 90%
+                                height: 90%
+                                opacity: 0.8
+                            &:hover
+                                background-color: $color_skillicon_hover
+                                img
+                                    opacity: 1
+                      
+section#project
+    padding-top: 80px
+    .projecttext
+        padding-top: 60px
+        margin-bottom: 30px
+        h1
+            color: $color_milktea
+            font-size: 50px
+            text-align: center
+            transition-duration: 0.5s
+        p
+            color: $color_milktea
+            text-align: center
+            font-size: 22px
+            transition-duration: 0.5s
+            a
+                color: $color_milktea
+
+    .projectcontainer
+        margin: 40px 200px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        .leftpart
+            flex: 0 0 50%
+            height: 350px
+            transition-duration: 0.5s
+            .projectimg1
+                background-image: url("./pictures/bgimg8.jpg")
+                background-repeat: no-repeat
+                background-position: center center
+                width: 100%
+                height: 100%
+                background-size: 100%
+            .projectimg2
+                background-image: url("./pictures/bgimg9.jpg")
+                background-repeat: no-repeat
+                background-position: 50% 40% 
+                width: 100%
+                height: 100%
+                background-size: 100%
+            .projectimg3
+                background-image: url("./pictures/bgimg10.jpg")
+                background-repeat: no-repeat
+                background-position:  50% 5% 
+                width: 100%
+                height: 100%
+                background-size: 100%
+            .projectimg4
+                background-image: url("./pictures/bgimg11.jpg")
+                background-repeat: no-repeat
+                background-position: center center
+                width: 100%
+                height: 100%
+                background-size: 100%
+        .rightpart
+            flex: 0 0 50%
+            height: 350px
+            padding: 0px 25px 0px 30px
+            transition-duration: 0.5s
+            a
+                
+                text-decoration: none
+                padding-top: 5px
+                h3
+                    color: $color_milktea
+                    font-size: 30px
+                    padding-top: 35px
+                p
+                    color: $color_milktea
+                    font-size: 20px
+                    text-align: left
+                    padding-left: 10px
+
+footer
+    background-color: $color_bg_green
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    margin-top: 100px
+    a.logo
+        text-decoration: none
+        margin-top: 30px
+        width: 100px
+        height: 100px
+        img
+            width: 100%
+            height: 100%
+            transform: scale(2)
+
+
+    .bottombar
+        margin-top: 20px
+        width: 100%
+        height: 80px
+        background-color: $color_milktea
+        color: white
+        text-align: center
+        padding-top: 15px
+        display: flex
+        justify-content: center
+        align-items: center
+        .author
+            padding-left: 20px
+        .imgcontrol
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100px
+            a
+                text-decoration: none
+                img
+                    width: 50px
+                    height: 50px
+                    opacity: 0.8
+                    padding: 10px
+
+.bgchange
+    background-position: center
+
+.changedmoveinarea
+    position: absolute
+    animation: moveinagain 3s forwards
+    h1
+        color: $color_moveintext_green
+        font-size: 50px
+        transition-duration: 0.5s
+        &::after
+            content:"Flexible style"
+    p
+        color: $color_moveintext_green
+        font-size: 30px
+        transition-duration: 0.5s
+        &::after
+            content:"Open to possibilities"
+        
+
+@keyframes bounce
+    0%
+        transform: translateY(0px) scale(2,1)
+    30%
+        transform: translateY(-80px) scale(2,1)
+    40%
+        transform: translateY(0px) scale(2,1)
+    70%
+        transform: translateY(-50px) scale(2,1)
+    80%
+        transform: translateY(0px) scale(2,1)
+    90%
+        transform: translateY(-25px) scale(2,1)
+    100%
+        transform: translateY(0px) scale(2,1)
+
+@keyframes movein
+    0%
+        left: -20%
+        top: 250px
+    100%
+        left: 15%
+        top: 250px
+
+@keyframes moveinagain
+    0%
+        right: 15%
+        top: 0px
+    100%
+        right: 15%
+        top: 180px
+
+
+@media screen and (max-width:1100px)
+    section#about
+        transition-duration: 0.5s
+        .container.top
+            padding: 0px 100px
+        .container.bottom
+            .pic
+                height: 220px
+                flex: 0 0 40%
+                .textbox
+                    padding: 5px 5px
+                    h3
+                        font-size: 18px  
+    section#project
+        .projectcontainer
+            margin: 40px 100px
+
+@media screen and (max-width:950px)
+    section#skills
+        .skillbgimg
+            swiper-container
+                swiper-slide
+                    .imgcontainer
+                        h3
+                            font-size: 36px
+                        .iconbox
+                            div
+                               min-width: 80px
+                               width: 80px
+                               height: 70px
+
+    section#project
+        .projecttext
+            h1
+                font-size: 36px
+            p
+                font-size: 16px
+        .projectcontainer
+            margin: 40px 50px
+            flex-wrap: wrap
+            .leftpart
+                flex: 0 0 70%
+                margin: 10px
+                min-width: 500px
+            .rightpart
+                flex: 0 0 70%
+                margin: 10px
+                min-width: 500px
+
+@media screen and (max-width:850px)
+    section#about
+        transition-duration: 0.5s
+        .container.top
+            padding: 0px 100px
+        .container.bottom
+            .pic
+                height: 180px
+                flex: 0 0 40%
+                .textbox
+                    padding: 5px 5px
+                    h3
+                        font-size: 16px                                       
+
+@media screen and (max-width:650px)
+    section#about
+        transition-duration: 0.5s
+        .container.top
+            padding: 0px 50px
+            h1
+                font-size: 36px
+            p
+                font-size: 16px    
+        .container.bottom
+            .pic
+                height: 200px
+                flex: 0 0 70%
+                .textbox
+                    padding: 5px 5px
+                    h3
+                        font-size: 16px
+
+    section#skills
+        .skillbgimg
+            swiper-container
+                swiper-slide
+                    .imgcontainer
+                        h3
+                            font-size: 16px
+                        .iconbox
+                            flex-wrap: wrap
+                            div
+                               flex: 0 0 20%
+    
+    section#project
+        .projectcontainer
+            margin: 10px 10px
+            flex-wrap: wrap
+            .leftpart
+                width: 90%
+                min-width: 350px
+                height: 300px
+                margin: 10px
+                
+            .rightpart
+                width: 90%
+                min-width: 350px
+                height: 300px
+                margin: 10px   
+    nav
+        ul
+            li
+                min-width: 100px
+                flex: none
+                padding: 0
+                a
+                    margin: 0
+    header
+        .bgimg
+            background-repeat: no-repeat
+            background-size: 100%
+            background-position: center center
+        
+        a.arrow
+            font-size: 25px
+            bottom: 130px
+
+        .audioplayer
+            bottom: 150px
+            right: 50px
+        .moveinarea
+            h1
+                font-size: 30px
+            p
+                font-size: 16px
+        .changedmoveinarea
+            h1
+                font-size: 30px
+            p
+                font-size: 16px
+
+        
+        
+
+            

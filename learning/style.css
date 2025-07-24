@@ -1,0 +1,57 @@
+* {
+  color: #c4b1a0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}
+label #switch {
+  display: none;
+}
+
+.contentbox_enl, .contentbox_chi {
+  padding: 50px 200px;
+}
+.contentbox_enl h1, .contentbox_chi h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 35px;
+  border-bottom: 2px solid #c4b1a0;
+  margin: 0;
+}
+.contentbox_enl .learningbox, .contentbox_chi .learningbox {
+  padding: 30px 80px;
+}
+.contentbox_enl .learningbox .topicarea, .contentbox_chi .learningbox .topicarea {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 30px 0px;
+}
+.contentbox_enl .learningbox .topicarea h3, .contentbox_chi .learningbox .topicarea h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  flex: 0 0 70%;
+}
+.contentbox_enl .learningbox .topicarea h5, .contentbox_chi .learningbox .topicarea h5 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 30%;
+  text-align: right;
+}
+.contentbox_enl .learningbox p, .contentbox_chi .learningbox p {
+  font-size: 18px;
+  text-indent: 2em;
+}
+
+.showoff {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

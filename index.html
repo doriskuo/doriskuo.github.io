@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Doris Kuo | Web Developer</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#index" class="logo"><img src="./pictures/DK Logo.png" alt="Logo"></a>
+        <ul>
+            <li><a href="#about">About Doris</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+        </ul>
+    </nav>
+    <header id="index">
+        <div class="bgimg" id="mypic"></div>
+        <a href="#about" class="arrow">v</a>
+        <div class="audioplayer"><i class="fa-solid fa-volume-xmark"></i></div>
+        <div id="myslogan" class="moveinarea">
+            <h1 data-0="transform: translateY(0px)" data-300="transform: translateY(50px)"></h1>
+            <p></p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div data-0="opacity:0" data-460="opacity:1" class="container top">
+            <h1>About Doris</h1>
+            <p>A passionate front-end web developer who cares about users' needs and has been well trained with
+                full-stack
+                knowledge and skills.</p>
+        </div>
+        <div data-0="transform: translateX(-200px)" data-600="transform: translateX(0px)" class="container bottom">
+            <div class="pic pic1">
+                <a href="./experience/bgEx.html" target="_blank">
+                    <div class="textbox">
+                        <h3>過去專業背景 <br><span>My Professional Background</span></h3>
+                    </div>
+                </a>
+            </div>
+            <div class="pic pic2">
+                <a href="./catalyst/catalyst.html" target="_blank">
+                    <div class="textbox">
+                        <h3>接觸前端契機<br><span>My Path into Frontend</span></h3>
+                    </div>
+                </a>
+            </div>
+            <div class="pic pic3">
+                <a href="./learning/learning.html" target="_blank">
+                    <div class="textbox">
+                        <h3>前端學習歷程<br><span>My Frontend Learning Journey</span></h3>
+                    </div>
+                </a>
+            </div>
+            <div class="pic pic4">
+                <a href="./changecareer/change.html" target="_blank">
+                    <div class="textbox">
+                        <h3>轉職心路歷程<br><span>My Career Transition Story</span></h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skillbgimg">
+            <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true">
+                <swiper-slide>
+                    <div data-1000="opacity:0" data-1350="opacity:1" class="imgcontainer">
+                        <h3>Front-End Skills</h3>
+                        <div class="iconbox">
+                            <div data-1000="transform: translate(-200px,300px)"
+                                data-1350="transform: translate(0px, 0px)"><img src="./pictures/Vue.png"></div>
+                            <div data-1000="transform: translate(-100px,200px)"
+                                data-1350="transform: translate(0px, 0px)"><img src="./pictures/React.png"></div>
+                            <div data-1000="transform: translate(0px,100px)" data-1350="transform: translate(0px, 0px)">
+                                <img src="./pictures/Bootstrap.png">
+                            </div>
+                            <div data-1000="transform: translate(100px,200px)"
+                                data-1350="transform: translate(0px, 0px)"><img src="./pictures/JavaScript.png"></div>
+                            <div data-1000="transform: translate(200px,300px)"
+                                data-1350="transform: translate(0px, 0px)"><img src="./pictures/Sass.png"></div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div data-1000="opacity:0" data-1350="opacity:1" class="imgcontainer">
+                        <h3>Back-End & Other Skills</h3>
+                        <div class="iconbox">
+                            <div data-1000="transform: translate(-200px,300px)"
+                                data-1350="transform: translate(0px, 0px)"><img src="./pictures/NodeJS.png"></div>
+                            <div data-1000="transform: translate(-100px,200px)"
+                                data-1350="transform: translate(0px, 0px)"><img src="./pictures/Express.png"></div>
+                            <div data-1000="transform: translate(0px,100px)" data-1350="transform: translate(0px, 0px)">
+                                <img src="./pictures/MySQL.png">
+                            </div>
+                            <div data-1000="transform: translate(100px,200px)"
+                                data-1350="transform: translate(0px, 0px)"><img src="./pictures/MongoDB.png"></div>
+                            <div data-1000="transform: translate(200px,300px)"
+                                data-1350="transform: translate(0px, 0px)"><img src="./pictures/Git.png"></div>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </section>
+
+    <section id="project">
+        <div data-1400="opacity:0" data-1850="opacity:1" class="projecttext">
+            <h1>Recent Project</h1>
+            <p>Watch a full list of projects at once on my <a href="https://github.com/doriskuo?tab=repositories"
+                    target="_blank">GitHub</a></p>
+        </div>
+        <div class="projectcontainer">
+            <div class="leftpart">
+                <div data-1350="transform: translate(-200px,300px)" data-2000="transform: translate(0px, 0px)"
+                    class="projectimg1"></div>
+            </div>
+
+            <div data-1350="transform: translate(200px,300px)" data-2000="transform: translateY(0px,0px)"
+                class="rightpart">
+                <a href="https://github.com/doriskuo/shoppinglist-project" target="_blank">
+                    <h3>Shopping List</h3>
+                    <p>A web-based shopping list application where users can add or delete items and prices. The app
+                        dynamically updates the total cost using jQuery for DOM manipulation and AJAX for asynchronous
+                        data handling.</p>
+                </a>
+            </div>
+        </div>
+        <div class="projectcontainer">
+            <div class="leftpart">
+                <div data-1550="transform: translate(-200px,300px)" data-2400="transform: translate(0px, 0px)"
+                    class="projectimg2"></div>
+            </div>
+
+            <div data-1550="transform: translate(200px,300px)" data-2400="transform: translate(0px,0px)"
+                class="rightpart">
+                <a href="https://github.com/doriskuo/cellphone-project" target="_blank">
+                    <h3>Cell Phone Mode</h3>
+                    <p>Simulates a mobile interface with slide navigation, home/back button functionality, device
+                        switching, vibration, and rotation effects. Implemented using jQuery for class switching and CSS
+                        for visual transitions.</p>
+                </a>
+            </div>
+        </div>
+        <div class="projectcontainer">
+            <div class="leftpart">
+                <div data-1750="transform: translate(-200px,300px)" data-2800="transform: translate(0px, 0px)"
+                    class="projectimg3"></div>
+            </div>
+
+            <div data-1750="transform: translate(200px,300px)" data-2800="transform: translate(0px,0px)"
+                class="rightpart">
+                <a href="https://github.com/doriskuo/vue-project" target="_blank">
+                    <h3>Vue Website</h3>
+                    <p>A simulated online course webpage using @mixin for CSS styling and Vue.js for API-driven dynamic
+                        rendering.</p>
+                </a>
+            </div>
+        </div>
+        <div class="projectcontainer">
+            <div class="leftpart">
+                <div data-1950="transform: translate(-200px,300px)" data-3200="transform: translate(0px, 0px)"
+                    class="projectimg4"></div>
+            </div>
+
+            <div data-1950="transform: translateY(300px)" data-3200="transform: translateY(0px)" class="rightpart">
+                <a href="https://github.com/doriskuo/weatherbox_project" target="_blank">
+                    <h3>Weather Box</h3>
+                    <p>Created animations with CSS @keyframes and styled visuals using SVG. Interactive effects were
+                        triggered using checkbox :checked state.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#index" class="logo"><img src="./pictures/DK Logo.png" alt="Logo"></a>
+        <div class="bottombar">
+            <div class="imgcontrol">
+                <a href="https://github.com/doriskuo?tab=repositories" target="_blank"><img
+                        src="./pictures/github.png"></a>
+                <a href="https://codepen.io/your-work" target="_blank"><img src="./pictures/codepen.png"></a>
+            </div>
+            <div class="author">Doris's Portfolio © 2025 Copyright</div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

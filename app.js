@@ -26,6 +26,9 @@ setInterval(() => {
 let bgmusic = new Audio("./mixkit-island-beat-250.mp3");
 bgmusic.loop = true;
 bgmusic.volume = 0.3;
+let playmusic = () => {
+  bgmusic.play();
+};
 
 $(".audioplayer").click((e) => {
   if (e.target.className == "fa-solid fa-volume-xmark") {

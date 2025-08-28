@@ -389,6 +389,14 @@ section#project .projectcontainer .leftpart .projectimg5 {
   height: 100%;
   background-size: 100%;
 }
+section#project .projectcontainer .leftpart .projectimg6 {
+  background-image: url("./pictures/dashboard.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
 section#project .projectcontainer .rightpart {
   flex: 0 0 50%;
   height: 350px;

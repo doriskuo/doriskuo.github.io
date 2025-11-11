@@ -405,6 +405,14 @@ section#project .projectcontainer .leftpart .projectimg7 {
   height: 100%;
   background-size: 100%;
 }
+section#project .projectcontainer .leftpart .projectimg8 {
+  background-image: url("./pictures/bgimg14.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
 section#project .projectcontainer .rightpart {
   flex: 0 0 50%;
   height: 350px;

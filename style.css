@@ -413,6 +413,14 @@ section#project .projectcontainer .leftpart .projectimg8 {
   height: 100%;
   background-size: 100%;
 }
+section#project .projectcontainer .leftpart .projectimg9 {
+  background-image: url("./pictures/vibepal.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
 section#project .projectcontainer .rightpart {
   flex: 0 0 50%;
   height: 350px;
